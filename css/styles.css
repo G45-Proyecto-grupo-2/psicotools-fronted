@@ -107,6 +107,30 @@ h4 {
 /*======================== HEADER ===============================*/
 
 /*=================== SECCION NOSOTROS ==========================*/
+.btn {
+    background-color: var(--clr-primary-2);
+    border-radius: 4px;
+    font-family: "BanksMiles", sans-serif;
+    color: var(--clr-white);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.section-nosotros {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna-contenido {
+    width: 40%;
+    padding-left: 20px;
+}
+
+.columna-imagen {
+    max-width: 24%;
+}
 
 /*=================== SECCION SERVICIOS =========================*/
 
