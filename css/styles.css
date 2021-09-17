@@ -111,7 +111,50 @@ h4 {
 /*=================== SECCION SERVICIOS =========================*/
 
 /*=================== SECCION TALLERES ==========================*/
-
+.section-workshops{
+    display: grid;
+    grid-template-rows: 1fr repeat(5, 420px);
+    background-color: #edf3ff;
+}
+.container-card-workshop{
+    width: 88%;
+    display: grid;
+    grid-template-rows: 3fr 3fr 7fr;
+    margin: 0 auto 40px auto;
+    border-radius: var(--radius);
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--light-shadow);
+}
+.link-workshop{
+    grid-row: 2;
+    align-self: center;
+}
+.container-logo-workshop{
+    width: 3.5rem;
+    grid-row: 1;
+    margin: 0;
+    justify-self: center;
+}
+.link-workshop{
+    color: black;
+}
+.link-workshop__title{
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 0 0 0;
+}
+.container-paragraph-workshop{
+    text-align: justify;
+    margin: 0;
+    line-height: 1.4rem;
+    font-size: .8rem;
+    color: #444444;
+}
+.container-paragraph-workshop__link{
+    color: var(--clr-primary-2);
+}
 /*=================== SECCION CONTACTO ==========================*/
 
 /*======================== FOOTER ===============================*/
