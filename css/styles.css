@@ -109,9 +109,84 @@ h4 {
 /*=================== SECCION NOSOTROS ==========================*/
 
 /*=================== SECCION SERVICIOS =========================*/
+.seccion-servicios {
+    background-color: #f5f8fd;
+}
+
+.box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+    text-align: center;
+}
+.icon {
+    font-size: 2.5rem; 
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+.icon.heart {
+    background: #fceef3;
+    color: #ff689b;
+}
+
+.icon.musical {
+    background: #fff0da;
+    color: #e98e06;
+}
+
+.icon.paper {
+    background: #e6fdfc;
+    color: #3fcdc7;
+}
+
+.icon.glasses {
+    background: #eafde7;
+    color:#41cf2e;
+}
+
+.icon.controller {
+    background: #e1eeff;
+    color: #2282ff;
+}
+
+.title-box {
+    padding-top: 10px;
+}
+
+.feature-item-aco img{
+    height: auto;
+    width: auto;
+    max-height: 500px;
+    max-width: 500px;
+    margin-left: 130px;
+}
+
+.texto1 {
+    text-align: justify;
+}
 
 /*=================== SECCION TALLERES ==========================*/
 
 /*=================== SECCION CONTACTO ==========================*/
 
 /*======================== FOOTER ===============================*/
+
+
+
+/*======================= MEDIA QUERIES PANTALLA EXTRA-SM ============================*/
+
+/*========================= MEDIA QUERIES PANTALLA SM ================================*/
+@media (max-width:768px) {
+
+    #services-header {
+        width:90% !important;
+        margin:auto;
+    }
+
+}
+
+/*======================== MEDIA QUERIES PANTALLA ANCHA ===============================*/
