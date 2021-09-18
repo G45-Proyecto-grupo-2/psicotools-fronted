@@ -18,53 +18,63 @@
 <body>
     <header></header>
 
-    <main>
-        <fieldset>
-            <legend>Inscripción Taller</legend>
-            <form action="#" method="post">
-                <input type="text" placeholder="Nombre y apellido" required>
+    <main class="container-main">
+        <fieldset class="container-form">
+            <legend class="container-form__title">Inscripción Taller</legend>
+            <form action="#" method="post" class="form-workshop-registration">
+                <input type="text" placeholder="Nombre y apellido" required class="form-workshop-registration__input">
 
-                <input type="number" required>
+                <input type="number" placeholder="Edad" required class="form-workshop-registration__input">
 
-                <select name="" id="" required>
-                    <option value="" selected disabled>Selecciona Taller</option>
-                    <option value="Emocionaditos">Emocionaditos</option>
-                    <option value="Aprende Conmigo">Aprende Conmigo</option>
-                    <option value="LEVEL UP!">LEVEL UP!</option>
-                    <option value="El embarazo, una aventura para renacer">
+                <select name="" id="" required class="select-workshop-registration">
+                    <option value="" selected disabled class="select-workshop-registration__option">
+                        Selecciona Taller
+                    </option>
+                    <option value="Emocionaditos" class="select-workshop-registration__option">
+                        Emocionaditos
+                    </option>
+                    <option value="Aprende Conmigo" class="select-workshop-registration__option">
+                        Aprende Conmigo
+                    </option>
+                    <option value="LEVEL UP!" class="select-workshop-registration">
+                        LEVEL UP!
+                    </option>
+                    <option value="El embarazo, una aventura para renacer" class="select-workshop-registration">
                         El embarazo, una aventura para renacer
                     </option>
-                    <option value="PHARMAKON">PHARMAKON</option>
+                    <option value="PHARMAKON" class="select-workshop-registration">
+                        PHARMAKON
+                    </option>
                 </select>
 
-                <input type="email" placeholder="Email" required>
+                <input type="email" placeholder="Email" required class="form-workshop-registration__input">
 
-                <input type="text" placeholder="Telefono" required>
+                <input type="text" placeholder="Telefono" required class="form-workshop-registration__input">
 
-                <button>INSCRIBIRME</button>
+                <button class="form-workshop-registration__btn">INSCRIBIRME</button>
             </form>
         </fieldset>
 
-        <aside>
-            <div>
-                <p>
+        <aside class="container-aside-workshop-register">
+            <div class="container-info-form-register">
+                <p class="container-info-form-register__paragraph">
                     Estamos para ayudarte y hacer tu vida más simple.
                 </p>
-                <p>
+                <p class="container-info-form-register__paragraph">
                     ¡No dudes en contactarnos! Pronto nos comunicaremos contigo.
                 </p>
             </div>
 
-            <div>
-                <div>
-                    <h3>Escríbenos o llámanos</h3>
-                    <ul>
-                        <li>
+            <div class="container-info-contact">
+                <div class="container-telephone">
+                    <h3 class="container-telephone__title">Escríbenos o llámanos</h3>
+                    <ul class="container-list-info">
+                        <li class="container-list-info__item">
                             <i class="fab fa-whatsapp"></i>
                             <i class="fas fa-phone-alt"></i>
                             +(57) 316-549-2695
                         </li>
-                        <li>
+                        <li class="container-list-info__item">
                             <i class="fab fa-whatsapp"></i>
                             <i class="fas fa-phone-alt"></i>
                             +(57) 318-262-5221
@@ -72,20 +82,20 @@
                     </ul>
                 </div>
 
-                <div>
-                    <h3>Visítanos</h3>
-                    <ul>
-                        <li>
+                <div class="container-address">
+                    <h3 class="container-address__title">Visítanos</h3>
+                    <ul class="container-list-info">
+                        <li class="container-list-info__item">
                             <i class="fas fa-map-marker-alt"></i>
                             Calle 39 A # 18 - 32
                         </li>
                     </ul>
                 </div>
 
-                <div>
-                    <h3>Envíanos un email</h3>
-                    <ul>
-                        <li>
+                <div class="container-email">
+                    <h3 class="container-email__title">Envíanos un email</h3>
+                    <ul class="container-list-info">
+                        <li class="container-list-info__item">
                             <i class="fas fa-envelope"></i>
                             info@psicotools.com.co
                         </li>

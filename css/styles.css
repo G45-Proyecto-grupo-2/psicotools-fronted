@@ -111,10 +111,21 @@ h4 {
 /*=================== SECCION SERVICIOS =========================*/
 
 /*=================== SECCION TALLERES ==========================*/
+header{
+    text-align: center;
+    background-color: #edf3ff;
+}
+
 .section-workshops{
     display: grid;
-    grid-template-rows: 1fr repeat(5, 420px);
+    grid-template-rows: repeat(5, 420px);
     background-color: #edf3ff;
+    padding-top: 6rem;
+}
+.title-workshop{
+    color: #413E66;
+    font-size: 34px;
+    font-weight: 600;
 }
 .container-card-workshop{
     width: 88%;
@@ -155,6 +166,131 @@ h4 {
 .container-paragraph-workshop__link{
     color: var(--clr-primary-2);
 }
+
+.container-section-emocionaditos, .container-section-aprendeConmigo, .container-section-levelUp, .container-section-embarazo, .container-section-pharmakon{
+    padding: .9rem;
+}
+.container-figure-emocionaditos, .container-figure-aprendeConmigo, .container-figure-levelUp, .container-figure-embarazo, .container-figure-pharmakon{
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+}
+.container-figure-emocionaditos__img, .container-figure-aprendeConmigo__img, .container-figure-levelUp__img,.container-figure-embarazo__img, .container-figure-pharmakon__img{
+    width: 100%;
+    border-radius: .8rem;
+}
+.container-section-emocionaditos__title, .container-section-aprendeConmigo__title, .container-section-levelUp__title, .container-section-embarazo__title, .container-section-pharmakon__title{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.container-section-emocionaditos__paragraph,.container-section-aprendeConmigo__paragraph, .container-section-levelUp__paragraph, .container-section-embarazo__paragraph, .container-section-pharmakon__paragraph{
+    text-align: justify;
+}
+.container-section-levelUp__span{
+    color: var(--clr-primary-2);
+}
+.button-workshop {
+    display: inline-block;
+    border: none;
+    padding: .7rem;
+    font-size: .8rem;
+    color: white;
+    border-radius: .4rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: .8rem;
+}
+.button-workshop--blue {
+    width: 7rem;
+    background-color: var(--clr-primary-2);
+}
+
+.button-workshop--red {
+    width: 5rem;
+    background-color: #DC3545;
+}
+
+.container-main{
+    padding: .8rem;
+}
+.container-form{
+    border: 1px solid var(--clr-primary-2);
+    padding: 1.2rem;
+    background-color: white;
+    color:rgb(156, 156, 156);
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.container-form__title{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    color: var(--clr-primary-2);
+    font-weight: 700;
+}
+.form-workshop-registration__input, .select-workshop-registration{
+    display: block;
+    width: 100%;
+    height: 2.3rem;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 2px solid rgb(219, 219, 219);
+    background-color: white;
+    padding-left: .7rem;
+    color:rgb(129, 129, 129);
+}
+.form-workshop-registration__btn{
+    width: 7rem;
+    font-size: .7rem;
+    padding: .6rem;
+    border: none;
+    background-color: var(--clr-primary-2);
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 20px;
+}
+.form-workshop-registration__input:focus, .select-workshop-registration:focus{
+    outline: none;
+}
+.container-main{
+    background-image: url(/img/intro-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-info-form-register {
+    padding: .7rem;
+    border-bottom: 1px solid gray;
+    margin: 3rem 0 1rem 0;
+}
+.container-info-form-register__paragraph{
+    font-weight: 700;
+}
+.container-info-contact {
+    padding: .7rem;
+}
+.container-list-info{
+    padding-left: 0;
+}
+.container-list-info__item {
+    font-weight: 600;
+}
+.container-telephone__title, .container-address__title, .container-email__title{
+    color: var(--clr-primary-2);
+    font-weight: 700;
+}
+
+
+
 /*=================== SECCION CONTACTO ==========================*/
 
 /*======================== FOOTER ===============================*/
