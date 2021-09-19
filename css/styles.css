@@ -121,6 +121,7 @@ header{
     grid-template-rows: repeat(5, 420px);
     background-color: #edf3ff;
     padding-top: 6rem;
+    position: relative;
 }
 .title-workshop{
     color: #413E66;
@@ -168,24 +169,26 @@ header{
 }
 
 .container-section-emocionaditos, .container-section-aprendeConmigo, .container-section-levelUp, .container-section-embarazo, .container-section-pharmakon{
-    padding: .9rem;
+    padding: 1.3rem;
 }
 .container-figure-emocionaditos, .container-figure-aprendeConmigo, .container-figure-levelUp, .container-figure-embarazo, .container-figure-pharmakon{
+    width: 75vw;
     margin-top: 4rem;
     margin-bottom: 7rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container-figure-emocionaditos__img, .container-figure-aprendeConmigo__img, .container-figure-levelUp__img,.container-figure-embarazo__img, .container-figure-pharmakon__img{
-    width: 100%;
     border-radius: .8rem;
 }
-.container-section-emocionaditos__title, .container-section-aprendeConmigo__title, .container-section-levelUp__title, .container-section-embarazo__title, .container-section-pharmakon__title{
+.container-info-emocionaditos__title, .container-info-aprendeConmigo__title, .container-info-levelUp__title,.container-info-embarazo__title, .container-info-pharmakon__title{
     font-weight: 700;
     font-size: 1.1rem;
 }
-.container-section-emocionaditos__paragraph,.container-section-aprendeConmigo__paragraph, .container-section-levelUp__paragraph, .container-section-embarazo__paragraph, .container-section-pharmakon__paragraph{
+.container-info-emocionaditos__paragraph,.container-info-aprendeConmigo__paragraph, .container-info-levelUp__paragraph, .container-info-embarazo__paragraph, .container-info-pharmakon__paragraph{
     text-align: justify;
 }
-.container-section-levelUp__span{
+.container-info-levelUp__span{
     color: var(--clr-primary-2);
 }
 .button-workshop {
@@ -200,12 +203,12 @@ header{
     margin-top: .8rem;
 }
 .button-workshop--blue {
-    width: 7rem;
+    width: 7.5rem;
     background-color: var(--clr-primary-2);
 }
 
 .button-workshop--red {
-    width: 5rem;
+    width: 6rem;
     background-color: #DC3545;
 }
 
@@ -289,7 +292,158 @@ header{
     font-weight: 700;
 }
 
+.container-list-info__icon{
+    margin-right: .2rem;
+}
 
+@media screen and (min-width: 630px) {
+    .container-section-emocionaditos, .container-section-aprendeConmigo, .container-section-levelUp, .container-section-embarazo, .container-section-pharmakon{
+        padding: 3rem;
+    }
+    .container-figure-emocionaditos, .container-figure-aprendeConmigo, .container-figure-levelUp, .container-figure-embarazo, .container-figure-pharmakon{
+        width: 56vw;
+    }
+    .container-info-emocionaditos__title, .container-info-aprendeConmigo__title, .container-info-levelUp__title,.container-info-embarazo__title, .container-info-pharmakon__title{
+        font-size: 1.2rem;
+    }
+
+    .container-form{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .section-workshops{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 350px);
+        grid-auto-flow: dense;
+        justify-content: center;
+    }
+    .container-paragraph-workshop{
+        font-size: .7rem;
+    }
+    .link-workshop__title{
+        font-size: .9rem;
+    }
+    .container-section-emocionaditos, .container-section-aprendeConmigo, .container-section-levelUp, .container-section-embarazo, .container-section-pharmakon{
+        padding: 5rem;
+    }
+    .container-figure-emocionaditos, .container-figure-aprendeConmigo, .container-figure-levelUp, .container-figure-embarazo, .container-figure-pharmakon{
+        width: 47vw;
+    }
+    .container-info-emocionaditos__title, .container-info-aprendeConmigo__title, .container-info-levelUp__title,.container-info-embarazo__title, .container-info-pharmakon__title{
+        font-size: 1.3rem;
+    }
+    .container-main{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 2rem;
+        align-content: center;
+        justify-content: center;
+    }
+    .container-form{
+        width: 80%;
+        height: 82%;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .section-workshops {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        grid-template-rows: 440px 440px;
+        grid-auto-flow: initial;
+    }
+
+    .container-section-emocionaditos, .container-section-aprendeConmigo, .container-section-levelUp, .container-section-embarazo, .container-section-pharmakon{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 1rem;
+        align-content: flex-start;
+        justify-content: center;
+    }
+    .container-figure-emocionaditos, .container-figure-aprendeConmigo, .container-figure-levelUp, .container-figure-embarazo, .container-figure-pharmakon{
+        width: 87%;
+        margin: 0;
+        justify-self: center;
+    }
+    .container-info-emocionaditos__paragraph,.container-info-aprendeConmigo__paragraph, .container-info-levelUp__paragraph, .container-info-embarazo__paragraph, .container-info-pharmakon__paragraph{
+        grid-column: 2;
+    }
+    .button-workshop {
+        grid-column: 2;
+    }
+    .container-figure-emocionaditos__img, .container-figure-aprendeConmigo__img, .container-figure-levelUp__img,.container-figure-embarazo__img, .container-figure-pharmakon__img{
+        height: 380px;
+    }
+    .container-form{
+        width: 80%;
+        height: 85%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-workshops {
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(3, 390px);
+        grid-template-rows: 360px 360px;
+        grid-auto-flow: row;
+        padding: 0;
+        align-content: center;
+    }
+    .container-card-workshop{
+        transform: scale(1);
+        transition: transform .8s;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transition: transform .8s;
+        -moz-transition: transform .8s;
+        -ms-transition: transform .8s;
+        -o-transition: transform .8s;
+}
+    .container-card-workshop:hover{
+        transform: scale(1.1);
+        transition: transform .6s;
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -webkit-transition: transform .6s;
+        -moz-transition: transform .6s;
+        -ms-transition: transform .6s;
+        -o-transition: transform .6s;
+}
+    .container-section-emocionaditos, .container-section-aprendeConmigo, .container-section-levelUp, .container-section-embarazo, .container-section-pharmakon{
+        grid-template-columns: 30% 37%;
+        column-gap: 3rem;
+        align-content: center;
+    }
+
+    .button-workshop--blue:hover, .form-workshop-registration__btn:hover {
+        color:white;
+        background-color: #1294b8;
+    }
+    
+    .button-workshop--red:hover {
+        color:white;
+        background-color: #aa2633;
+    }
+
+    .container-main{
+        grid-template-columns: 30% 29%;
+        column-gap: 2rem;
+    }
+    .container-form{
+        height: 85%;
+    }
+}
 
 /*=================== SECCION CONTACTO ==========================*/
 
