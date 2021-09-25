@@ -146,11 +146,16 @@ header {
     background-image: url(/img/intro-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative;;
 }
 
-.header-icon {
-    
+.header-title {
+    font-weight: 700;
+}
+
+.header-title span
+{
+    color: #1bb1dc;
 }
 /*=================== SECCION NOSOTROS ==========================*/
 
