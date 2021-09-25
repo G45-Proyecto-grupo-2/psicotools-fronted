@@ -106,8 +106,9 @@ h4 {
 
 /*======================== HEADER ===============================*/
 
-.img-container {
+.nav-logo {
     margin: 10px;
+    left: 0;
 }
 
 .buttons-nav li {
@@ -129,9 +130,11 @@ h4 {
     font-weight: 600;
 }
 nav {
-    float: right;
+    /* float: right; */
     position: relative;
     white-space: nowrap;
+    width: 100%;
+
 }
 
 .buttons-nav li:hover>a {
@@ -139,6 +142,16 @@ nav {
     text-decoration: none;
 }
 
+header {
+    background-image: url(/img/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-icon {
+    
+}
 /*=================== SECCION NOSOTROS ==========================*/
 
 /*=================== SECCION SERVICIOS =========================*/
