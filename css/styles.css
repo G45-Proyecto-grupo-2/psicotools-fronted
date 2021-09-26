@@ -43,6 +43,7 @@ body {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 a {
@@ -106,9 +107,190 @@ h4 {
 
 /*======================== HEADER ===============================*/
 
+.nav-logo {
+    margin: 10px;
+    left: 0;
+}
+
+.buttons-nav li {
+    display: table-cell;
+    padding: 20px;
+}
+.buttons-nav li a {
+    color: #1bb1dc;
+    transition: 0.5s; 
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: #413e66;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Banks&Miles", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+nav {
+    /* float: right; */
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+
+}
+
+.buttons-nav li:hover>a {
+    color: #1bb1dc;
+    text-decoration: none;
+}
+
+header {
+    background-image: url(/img/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;;
+}
+
+.header-title {
+    font-weight: 700;
+}
+
+.header-title span
+{
+    color: #1bb1dc;
+}
 /*=================== SECCION NOSOTROS ==========================*/
 
+.seccion-nosotros {
+    padding: 5rem 0;
+}
+
+.columna-contenido__btn {
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: small;
+    letter-spacing: 1.5px;
+}
+.columna-contenido__lista li i{
+    font-size: 18px;
+    color: #1bb1dc;
+    padding-right: 20px;
+}
+
+.columna-contenido__titulo {
+    font-weight: 600;
+    color: #413e66;
+}
+
+.columna-contenido__eslogan {
+    color: #413e66;
+}
+
+.columna-contenido__descripcion {
+    text-align: justify;
+}
+
+
+
+.about-img::before {
+    content: '';
+    width: 322px;
+    height: 420px;
+    background-color: #eaeef5;
+    display: block;
+    position: absolute;
+    left: -30px;
+    top:  -30px;
+    z-index: -1;
+}
+
+.about-img::after {
+    content: '';
+    width: 322px;
+    height: 420px;
+    background-color: #eaeef5;
+    display: block;
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.columna-imagen > img {
+    /* width: 20rem; */
+    display: block;
+    margin: auto;
+    border: solid 8px var(--clr-white);
+    border-radius: 4px;
+}
+
+.about-img {
+    position: relative;
+}
+
+.about-img {
+    margin: 30px;
+}
+
 /*=================== SECCION SERVICIOS =========================*/
+.seccion-servicios {
+    background-color: #f5f8fd;
+}
+
+.box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+    text-align: center;
+}
+.icon {
+    font-size: 2.5rem; 
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+.icon.heart {
+    background: #fceef3;
+    color: #ff689b;
+}
+
+.icon.musical {
+    background: #fff0da;
+    color: #e98e06;
+}
+
+.icon.paper {
+    background: #e6fdfc;
+    color: #3fcdc7;
+}
+
+.icon.glasses {
+    background: #eafde7;
+    color:#41cf2e;
+}
+
+.icon.controller {
+    background: #e1eeff;
+    color: #2282ff;
+}
+
+.title-box {
+    padding-top: 10px;
+}
+
+.feature-item-aco img{
+    height: auto;
+    width: auto;
+    max-height: 500px;
+    max-width: 500px;
+    margin-left: 130px;
+}
+
+.texto1 {
+    text-align: justify;
+}
 
 /*=================== SECCION TALLERES ==========================*/
 header{
@@ -448,3 +630,19 @@ header{
 /*=================== SECCION CONTACTO ==========================*/
 
 /*======================== FOOTER ===============================*/
+
+
+
+/*======================= MEDIA QUERIES PANTALLA EXTRA-SM ============================*/
+
+/*========================= MEDIA QUERIES PANTALLA SM ================================*/
+@media (max-width:768px) {
+
+    #services-header {
+        width:90% !important;
+        margin:auto;
+    }
+
+}
+
+/*======================== MEDIA QUERIES PANTALLA ANCHA ===============================*/

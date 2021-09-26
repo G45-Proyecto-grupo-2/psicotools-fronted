@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <title>Psicotools</title>
 </head>
 
@@ -19,12 +23,39 @@
     <!-- Edwin -->
     <!-- Inicio encabezado del sitio -->
     <header>
-        <!-- Inicio menú navegación -->
-        <nav>
 
-        </nav>
-        <!-- Fin menú navegación -->
-        <h2 class="title-workshop">Talleres</h2>
+
+        <div class="container">
+            
+            <!-- Inicio menú navegación -->
+            <nav class="nav justify-content-between">
+    
+                <img class="nav-logo" src="/img/home/Logo.png" alt="Logo-psicotools">
+    
+                <ul class="buttons-nav">
+                    <li><a href="/">INICIO</a></li>
+                    <li><a href="/about">NOSOTROS</a></li>
+                    <li><a href="/services">SERVICIOS</a></li>
+                    <li><a href="/workshops">TALLERES</a></li>
+                    <li><a href="/contact">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <!-- Fin menú navegación -->
+    
+    
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-5">
+                    <h1 class="header-title">Un equipo de profesionales hecho a tu <span>medida</span></h1>
+                    <button type="button" class="btn">conocer más</button>
+                </div>
+    
+                <div class="header-icon col-sm-4">
+                    <img src="/img/home/img-1.png">
+                </div>
+            </div>
+        </div>
+
+
     </header>
     <!-- Fin encabezado del sitio -->
 
@@ -33,10 +64,148 @@
 
         <!-- Jahleels -->
         <!-- Inicio sección de Nosotros -->
+        <section class="seccion-nosotros container-lg">
+        <div class="row justify-content-center">
+            <div class="columna-contenido col-lg-7 col-sm-5 order-1">
+        
+                <h2 class="columna-contenido__titulo">¿ Quienes somos ?</h2>
+        
+                <h3 class="columna-contenido__eslogan"><em>Disfruta lo mejor de la psicología profesional en un solo lugar</em></h3>
+        
+                <p class="columna-contenido__descripcion">
+                    Somos un centro de atención psicológica integral que brinda herramientas para la vida y la salud mental de las personas. 
+                    Nuestro enfoque integral permite dar cobertura a las diferentes necesidades psicológicas atendiendo, a su vez, 
+                    a todos los sectores de la ciudad desde una misma sede, procurando la atención desde la primera infancia hasta la tercera edad. <br><br>
+                    Nos caracterizan nuestros valores corporativos:</p>
+                <ul class="columna-contenido__lista">
+                    <li><i class="bi bi-check2-circle"></i>Trabajo en equipo</li>
+                    <li><i class="bi bi-check2-circle"></i>Calidad</li>
+                    <li><i class="bi bi-check2-circle"></i>Confianza</li>
+                    <li><i class="bi bi-check2-circle"></i>Responsabilidad</li>
+                    <li><i class="bi bi-check2-circle"></i>Confidencialidad</li>
+                </ul>
+        
+                <button type="button" class="columna-contenido__btn btn btn-primary">CONOCER MÁS</button>
+        
+            </div>
+        
+            <div class="columna-imagen col-lg-5  col-md-6">
+                <div class="about-img">
+                    <img src="./img/about-img.jpg" class="img-fluid" alt="Persona mirando arquitectura">
+                </div>
+            </div>
+        </div>
+        </section>
         <!-- Fin sección de Nosotros -->
 
         <!-- Jeffersonn Urrea -->
         <!-- Inicio sección de servicios -->
+        <!--========================== Intro Section ============================-->
+        <!-- <section id="intro" class="clearfix" style="height: 240px;">
+            <div class="container d-flex h-100 justify-content-center">
+                <div class="row justify-content-center align-self-center">
+                    <div class=" intro-info mt-5">
+                        <h2 class="font-weight-bold">Servicios</h2>
+                    </div>
+                </div>
+            </div>
+            </section> -->
+
+        <!--========================== Services Section ============================-->
+        <section id="services" class="seccion-servicios">
+            <div class="container">
+                <header id="services-header" class="w-50 mx-auto text-center pt-5">
+                    <h2>Servicios</h2>
+                    <p>
+                        Encontrar buenos servicios a la mano no siempre es tan sencillo, sin embargo
+                        en <span style="color: #065e77; font-size: large;" >Psicotools</span> nos preocupamos por recibirte con la mejor
+                        atención. Conoce mucho más sobre nuestros servicios.
+                    </p>
+                </header>
+
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box">
+                            <div>
+                                <ion-icon name="heart-circle-outline" class="icon heart"></ion-icon>
+                                <h4 class="title-box">
+                                    <a href="./servicios/acoPsicologico.html">Acompañamiento psicológico</a>
+                                </h4>
+                            </div>
+                            <p class="description text-justify">
+                                Es un proceso psicoterapéutico dónde se tiene un espacio de confianza y un
+                                acompañamiento empático que permitirá trabajar situaciones ...
+                                <a href="./servicios/acoPsicologico.html">Ver más</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box">
+                            <div>
+                                <ion-icon name="musical-note" class="icon musical"></ion-icon>
+                                <h4 class="title-box"><a href="/services/musica">Musicoterapia</a></h4>
+                            </div>
+                            <p class="description text-justify">
+                                A través de la musicoterapia podrás embarcarte en un camino de autoconocimiento y
+                                reconocimiento de tus potenciales, descubriendo ...
+                                <a href="/services/musica">Ver más</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box">
+                            <div>
+                                <ion-icon name="newspaper-outline" class="icon paper"></ion-icon>
+                                <h4 class="title-box">
+                                    <a href="./servicios/evaPsicologica.html">Evaluación Psicológica</a>
+                                </h4>
+                            </div>
+                            <p class="description text-justify">
+                                Con la evaluación psicológica podrás obtener información respecto a cómo están tus
+                                procesos cognitivos, psicológicos o emocionales...
+                                <a href="./servicios/evaPsicologica.html">Ver más</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <div class="box">
+                            <div>
+                                <ion-icon name="glasses-outline" class="icon glasses"></ion-icon>
+                                <h4 class="title-box"><a href="/servicios/neuropsicologia.html">Neuropsicología Clínica</a></h4>
+                            </div>
+                            <p class="description text-justify">
+                                Buscamos establecer un perfil global del funcionamiento cognitivo de la
+                                persona evaluada mediante diversos instrumentos y herramientas ...
+                                <a href="/servicios/neuropsicologia.html">Ver más</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <div class="box">
+                            <div>
+                                <ion-icon name="game-controller-outline" class="icon controller"></ion-icon>
+                                <h4 class="title-box">
+                                    <a href="/servicios/acoPsicoeducativo.html">Acompañamiento Psicoeducativo</a>
+                                </h4>
+                            </div>
+                            <p class="description text-justify">
+                                Este servicio busca orientar y potenciar el aprendizaje de los estudiantes a través del
+                                fortalecimiento de sus estrategias de estudio de acuerdo a sus ...
+                                <a href="/servicios/acoPsicoeducativo.html">Ver más</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- #services -->
+
+        
         <!-- Fin sección de servicios -->
 
         <!-- Daniel -->
@@ -136,6 +305,8 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
