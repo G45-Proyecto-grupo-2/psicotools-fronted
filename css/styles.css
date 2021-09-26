@@ -43,6 +43,7 @@ body {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 a {
@@ -158,6 +159,77 @@ header {
     color: #1bb1dc;
 }
 /*=================== SECCION NOSOTROS ==========================*/
+
+.seccion-nosotros {
+    padding: 5rem 0;
+}
+
+.columna-contenido__btn {
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: small;
+    letter-spacing: 1.5px;
+}
+.columna-contenido__lista li i{
+    font-size: 18px;
+    color: #1bb1dc;
+    padding-right: 20px;
+}
+
+.columna-contenido__titulo {
+    font-weight: 600;
+    color: #413e66;
+}
+
+.columna-contenido__eslogan {
+    color: #413e66;
+}
+
+.columna-contenido__descripcion {
+    text-align: justify;
+}
+
+
+
+.about-img::before {
+    content: '';
+    width: 322px;
+    height: 420px;
+    background-color: #eaeef5;
+    display: block;
+    position: absolute;
+    left: -30px;
+    top:  -30px;
+    z-index: -1;
+}
+
+.about-img::after {
+    content: '';
+    width: 322px;
+    height: 420px;
+    background-color: #eaeef5;
+    display: block;
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.columna-imagen > img {
+    /* width: 20rem; */
+    display: block;
+    margin: auto;
+    border: solid 8px var(--clr-white);
+    border-radius: 4px;
+}
+
+.about-img {
+    position: relative;
+}
+
+.about-img {
+    margin: 30px;
+}
 
 /*=================== SECCION SERVICIOS =========================*/
 .seccion-servicios {
