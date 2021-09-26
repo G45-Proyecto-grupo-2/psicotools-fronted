@@ -144,10 +144,11 @@ nav {
 }
 
 header {
-    background-image: url(/img/intro-bg.jpg);
+    background-image: url(/img/intro-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;;
+    position: relative;
+    height: 100vh;
 }
 
 .header-title {
@@ -164,7 +165,9 @@ header {
     padding: 5rem 0;
 }
 
-.columna-contenido__btn {
+.columna-contenido__btn,
+.header__btn 
+{
     padding: 10px 30px;
     font-weight: 600;
     font-size: small;
@@ -215,7 +218,7 @@ header {
     z-index: -1;
 }
 
-.columna-imagen > img {
+.about-img > img {
     /* width: 20rem; */
     display: block;
     margin: auto;
@@ -225,11 +228,9 @@ header {
 
 .about-img {
     position: relative;
-}
-
-.about-img {
     margin: 30px;
 }
+
 
 /*=================== SECCION SERVICIOS =========================*/
 .seccion-servicios {
@@ -293,10 +294,6 @@ header {
 }
 
 /*=================== SECCION TALLERES ==========================*/
-header{
-    text-align: center;
-    background-color: #edf3ff;
-}
 
 .section-workshops{
     display: grid;
